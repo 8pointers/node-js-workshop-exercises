@@ -1,0 +1,64 @@
+{
+  "name": "node-workshop-exercises",
+  "version": "1.0.0",
+  "description": "NodeJS Workshop Exercises",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon lib/dont-peek",
+    "debug": "node --nolazy --inspect-brk=9229 lib/02-web-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/8pointers/node-js-workshop-exercises.git"
+  },
+  "author": "Damjan Vujnovic",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "eslint": "5.15.1",
+    "eslint-config-prettier": "4.1.0",
+    "jest": "24.1.0",
+    "nodemon": "1.18.10",
+    "prettier": "1.16.4"
+  },
+  "dependencies": {
+    "co-body": "^6.0.0",
+    "koa": "2.7.0",
+    "koa-jwt": "3.5.1",
+    "mongodb": "3.1.13",
+    "node-fetch": "2.3.0",
+    "request": "^2.88.0",
+    "sqlite3": "4.0.6"
+  },
+  "eslintConfig": {
+    "env": {
+      "jest": true,
+      "node": true
+    },
+    "extends": [
+      "prettier"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "globals": {
+      "__": false
+    },
+    "rules": {
+      "consistent-this": [
+        "error",
+        "fn",
+        "self"
+      ]
+    }
+  },
+  "jest": {
+    "globals": {
+      "__": "Fill this in so that the test is passing"
+    }
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "prices": [1, 2, 5, 10],
+  "prizeLevels": [
+    {
+      "multiplier": 0,
+      "scenarios": ["scenario-0-0", "scenario-0-1"]
+    },
+    {
+      "probabilityUp": 9,
+      "probabilityDown": 100,
+      "multiplier": 11,
+      "scenarios": ["scenario-1-0", "scenario-1-1"]
+    },
+    {
+      "probabilityUp": 1,
+      "probabilityDown": 100,
+      "multiplier": 100,
+      "scenarios": ["scenario-2-0", "scenario-2-1"]
+    }
+  ]
+}
